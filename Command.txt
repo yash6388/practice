@@ -1,0 +1,48 @@
+Git Command
+
+0. git init
+
+1. git clone https://github.com/VaibhavYadav1/Dummy.git
+
+2. git add .
+
+3. git commit -m "update Hello world to hello"
+
+4. git branch -m main
+
+5. git remote add origin
+
+6. git push -u origin main
+
+Docker Command
+
+1. Dockerfile
+
+FROM openjdk:17-jdk-slim
+
+WORKDIR /app
+
+COPY Hello.java /app
+
+RUN javac Hello.java
+
+CMD ["java", "Hello"]
+
+
+2. docker build -t hello_docker .
+
+3. docker run hello_docker
+
+optional docker cmd
+
+1. docker pull nginx
+
+2. docker images
+
+3. docker rmi nginx
+
+Shell Script
+
+1. nano 04.sh
+
+2. bash 04.sh
